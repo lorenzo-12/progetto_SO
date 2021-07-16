@@ -133,6 +133,15 @@ void print_coda(coda* aux){
     printf(RESET);
 }
 
+
+
+///le funzioni "leggi" e "scrivi" contengono unicamente il codice che dovrà essere aggiunto all'interno della rispettiva
+///system call. Tali funzioni verranno commentate una volta aggiunte le system call, ma per il momento sono utili a testare 
+///il codice, in modo da capire se quando si scrive si scrive nel modo giusto e se si aggiornano i parametri in modo coerente
+///(idem per la lettura)
+
+
+
 //funzione che tenta di scrivere nella coda "coda", "size" caratteri della stringa "s"
 //viene restituito il numero di caratteri che si sono effettivamente scritti
 int scrivi(coda* coda,char* s,int size){
