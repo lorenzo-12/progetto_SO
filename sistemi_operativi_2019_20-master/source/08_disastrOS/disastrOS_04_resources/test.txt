@@ -1,0 +1,672 @@
+[31mnum_code: 0
+[31mnull
+[0m[0mthe function pointer is: 0x55ee0a057d2estart
+****************** DisastrOS ******************
+Running: [pid: 0, child: ()]
+Timers: []
+Resources: {
+}
+
+Ready: {
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+hello, I am init and I just started
+I feel like to spawn 10 nice threads
+mode: 1
+opening resource (and creating if necessary)
+fd=0
+mode: 1
+opening resource (and creating if necessary)
+fd=1
+mode: 1
+opening resource (and creating if necessary)
+fd=2
+mode: 1
+opening resource (and creating if necessary)
+fd=3
+mode: 1
+opening resource (and creating if necessary)
+fd=4
+mode: 1
+opening resource (and creating if necessary)
+fd=5
+mode: 1
+opening resource (and creating if necessary)
+fd=6
+mode: 1
+opening resource (and creating if necessary)
+fd=7
+mode: 1
+opening resource (and creating if necessary)
+fd=8
+mode: 1
+opening resource (and creating if necessary)
+fd=9
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 1, child: ()],
+	[pid: 2, child: ()],
+	[pid: 3, child: ()],
+	[pid: 4, child: ()],
+	[pid: 5, child: ()],
+	[pid: 6, child: ()],
+	[pid: 7, child: ()],
+	[pid: 8, child: ()],
+	[pid: 9, child: ()],
+	[pid: 10, child: ()],
+	[pid: 11, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+Hello, I am the sleeper, and I sleep 1
+time: 1
+Hello, I am the child function 2
+I will iterate a bit, before terminating
+SCRIVI
+[34mname: coda1
+num_ref:1
+writing_space:95
+writing_index:5
+reading_space:5
+reading_index:0
+BBBBB_______________________________________________________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 2
+Hello, I am the child function 3
+I will iterate a bit, before terminating
+SCRIVI
+[34mname: coda1
+num_ref:2
+writing_space:90
+writing_index:10
+reading_space:10
+reading_index:0
+BBBBBBBBBB__________________________________________________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 3
+Hello, I am the child function 4
+I will iterate a bit, before terminating
+LEGGI
+[34mname: coda1
+num_ref:3
+writing_space:95
+writing_index:10
+reading_space:5
+reading_index:5
+_____BBBBB__________________________________________________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 4
+Hello, I am the child function 5
+I will iterate a bit, before terminating
+SCRIVI
+[34mname: coda1
+num_ref:4
+writing_space:90
+writing_index:15
+reading_space:10
+reading_index:5
+_____BBBBBBBBBB_____________________________________________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 5
+Hello, I am the child function 6
+I will iterate a bit, before terminating
+SCRIVI
+[34mname: coda1
+num_ref:5
+writing_space:85
+writing_index:20
+reading_space:15
+reading_index:5
+_____BBBBBBBBBBBBBBB________________________________________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 6
+Hello, I am the child function 7
+I will iterate a bit, before terminating
+SCRIVI
+[34mname: coda1
+num_ref:6
+writing_space:80
+writing_index:25
+reading_space:20
+reading_index:5
+_____BBBBBBBBBBBBBBBBBBBB___________________________________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 7
+Hello, I am the child function 8
+I will iterate a bit, before terminating
+LEGGI
+[34mname: coda1
+num_ref:7
+writing_space:85
+writing_index:25
+reading_space:15
+reading_index:10
+__________BBBBBBBBBBBBBBB___________________________________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 8
+Hello, I am the child function 9
+I will iterate a bit, before terminating
+SCRIVI
+[34mname: coda1
+num_ref:8
+writing_space:80
+writing_index:30
+reading_space:20
+reading_index:10
+__________BBBBBBBBBBBBBBBBBBBB______________________________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 9
+Hello, I am the child function 10
+I will iterate a bit, before terminating
+SCRIVI
+[34mname: coda1
+num_ref:9
+writing_space:75
+writing_index:35
+reading_space:25
+reading_index:10
+__________BBBBBBBBBBBBBBBBBBBBBBBBB_________________________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 10
+Hello, I am the child function 11
+I will iterate a bit, before terminating
+SCRIVI
+[34mname: coda1
+num_ref:10
+writing_space:70
+writing_index:40
+reading_space:30
+reading_index:10
+__________BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB____________________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 11
+time: 12
+LEGGI
+[34mname: coda1
+num_ref:10
+writing_space:75
+writing_index:40
+reading_space:25
+reading_index:15
+_______________BBBBBBBBBBBBBBBBBBBBBBBBB____________________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 13
+LEGGI
+[34mname: coda1
+num_ref:10
+writing_space:80
+writing_index:40
+reading_space:20
+reading_index:20
+____________________BBBBBBBBBBBBBBBBBBBB____________________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 14
+SCRIVI
+[34mname: coda1
+num_ref:10
+writing_space:75
+writing_index:45
+reading_space:25
+reading_index:20
+____________________BBBBBBBBBBBBBBBBBBBBBBBBB_______________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 15
+LEGGI
+[34mname: coda1
+num_ref:10
+writing_space:80
+writing_index:45
+reading_space:20
+reading_index:25
+_________________________BBBBBBBBBBBBBBBBBBBB_______________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 16
+LEGGI
+[34mname: coda1
+num_ref:10
+writing_space:85
+writing_index:45
+reading_space:15
+reading_index:30
+______________________________BBBBBBBBBBBBBBB_______________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 17
+LEGGI
+[34mname: coda1
+num_ref:10
+writing_space:90
+writing_index:45
+reading_space:10
+reading_index:35
+___________________________________BBBBBBBBBB_______________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 18
+SCRIVI
+[34mname: coda1
+num_ref:10
+writing_space:85
+writing_index:50
+reading_space:15
+reading_index:35
+___________________________________BBBBBBBBBBBBBBB__________________________________________________
+[0m[31mHO SCRITTO:5
+[0mtime: 19
+LEGGI
+[34mname: coda1
+num_ref:10
+writing_space:90
+writing_index:50
+reading_space:10
+reading_index:40
+________________________________________BBBBBBBBBB__________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 20
+LEGGI
+[34mname: coda1
+num_ref:10
+writing_space:95
+writing_index:50
+reading_space:5
+reading_index:45
+_____________________________________________BBBBB__________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 21
+LEGGI
+[34mname: coda1
+num_ref:10
+writing_space:100
+writing_index:50
+reading_space:0
+reading_index:50
+____________________________________________________________________________________________________
+[0m[31mHO LETTO:5
+[0mtime: 22
+time: 23
+fd=0
+PID: 2, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 3, 4, 5, 6, 7, 8, 9, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 3, child: ()],
+	[pid: 4, child: ()],
+	[pid: 5, child: ()],
+	[pid: 6, child: ()],
+	[pid: 7, child: ()],
+	[pid: 8, child: ()],
+	[pid: 9, child: ()],
+	[pid: 10, child: ()],
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 2 terminated, retval:3, alive: 10 
+fd=0
+PID: 3, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 4, 5, 6, 7, 8, 9, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 4, child: ()],
+	[pid: 5, child: ()],
+	[pid: 6, child: ()],
+	[pid: 7, child: ()],
+	[pid: 8, child: ()],
+	[pid: 9, child: ()],
+	[pid: 10, child: ()],
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 3 terminated, retval:4, alive: 9 
+fd=0
+PID: 4, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 5, 6, 7, 8, 9, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 5, child: ()],
+	[pid: 6, child: ()],
+	[pid: 7, child: ()],
+	[pid: 8, child: ()],
+	[pid: 9, child: ()],
+	[pid: 10, child: ()],
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 4 terminated, retval:5, alive: 8 
+fd=0
+PID: 5, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 6, 7, 8, 9, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 6, child: ()],
+	[pid: 7, child: ()],
+	[pid: 8, child: ()],
+	[pid: 9, child: ()],
+	[pid: 10, child: ()],
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 5 terminated, retval:6, alive: 7 
+fd=0
+PID: 6, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 7, 8, 9, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 7, child: ()],
+	[pid: 8, child: ()],
+	[pid: 9, child: ()],
+	[pid: 10, child: ()],
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 6 terminated, retval:7, alive: 6 
+fd=0
+PID: 7, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 8, 9, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 8, child: ()],
+	[pid: 9, child: ()],
+	[pid: 10, child: ()],
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 7 terminated, retval:8, alive: 5 
+fd=0
+PID: 8, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 9, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 9, child: ()],
+	[pid: 10, child: ()],
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 8 terminated, retval:9, alive: 4 
+fd=0
+PID: 9, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 10, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 10, child: ()],
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 9 terminated, retval:10, alive: 3 
+fd=-9
+PID: 10, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1, 11)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 11, child: ()],
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 10 terminated, retval:11, alive: 2 
+fd=-9
+PID: 11, terminating
+****************** DisastrOS ******************
+Running: [pid: 0, child: (1)]
+Timers: []
+Resources: {
+	id: 0, type:0, pids:[(pid: 0, fd: 0, rid:0)],
+	id: 1, type:0, pids:[(pid: 1, fd: 0, rid:1)],
+	id: 2, type:0, pids:[(pid: 2, fd: 0, rid:2)],
+	id: 3, type:0, pids:[(pid: 3, fd: 0, rid:3)],
+	id: 4, type:0, pids:[(pid: 4, fd: 0, rid:4)],
+	id: 5, type:0, pids:[(pid: 5, fd: 0, rid:5)],
+	id: 6, type:0, pids:[(pid: 6, fd: 0, rid:6)],
+	id: 7, type:0, pids:[(pid: 7, fd: 0, rid:7)],
+	id: 8, type:0, pids:[(pid: 8, fd: 0, rid:8)],
+	id: 9, type:0, pids:[(pid: 9, fd: 0, rid:9)]
+}
+
+Ready: {
+	[pid: 1, child: ()]
+}
+
+Waiting: {
+}
+
+Zombie: {
+}
+
+***********************************************
+
+initFunction, child: 11 terminated, retval:12, alive: 1 
+num_code: 0
+[31mnull
+[0mshutdown!

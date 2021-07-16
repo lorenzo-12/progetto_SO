@@ -7,13 +7,13 @@
 
 void scrivi(){
 	
-    printf(RED);
     printf("SCRIVI\n");
-    printf(RESET);
 	
+	//leggo i parametri in input
 	coda* coda = running->syscall_args[0];
 	char* s = running->syscall_args[1];
 	int size = running->syscall_args[2];
+	
     int i=0;
     //se lo spazio disponibile è 0 allora ritorno subito "0" in modo da avvisare che ho scritto "o" caratteri
     if(coda->writing_space==0) {

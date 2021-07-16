@@ -7,10 +7,9 @@
 
 void leggi(){
 	
-	printf(RED);
     printf("LEGGI\n");
-    printf(RESET);
     
+    //leggo i parametri in input
 	coda* coda = running->syscall_args[0];
 	char* s = running->syscall_args[1];
 	int size = running->syscall_args[2];

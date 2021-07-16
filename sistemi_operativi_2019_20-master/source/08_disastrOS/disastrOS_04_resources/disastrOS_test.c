@@ -2,10 +2,9 @@
 #include <unistd.h>
 #include <poll.h>
 #include "strutture.h"
-
-#define RED     "\x1b[31m"
-#define RESET   "\x1b[0m"
 #include "disastrOS.h"
+
+//struttura che conterrà le code
 lista_code lista;
 
 // we need this to handle the sleep state
@@ -21,52 +20,76 @@ void childFunction(void* args){
   printf("Hello, I am the child function %d\n",disastrOS_getpid());
   printf("I will iterate a bit, before terminating\n");
   
+  //aggiunto da me----->
+  
+	//apro la coda desiderata
 	coda* coda1=apri_coda("coda1");
 	char s[64];
 	int ret=0;
+	
+	//prendo il pid del processo in modo che non tutti i processi eseguano le stesse chiamate di syscall
+	//con lo stesso ordine
 	int a=disastrOS_getpid();
 	
-	if(a%2==0){
+	
+	
+	//i processi multipli di 4 leggono e poi scrivono
+	if(a%4==0){
 		while(!ret){
 			ret=leggi_coda_syscall(coda1,s,5);
+			printf(RED);
 			printf("HO LETTO:%d\n",ret);
+			printf(RESET);
 			sleep(10);
 		}
 		ret=0;
 		while(!ret){
 			ret=scrivi_coda_syscall(coda1,"BBBBB",5);
+			printf(RED);
 			printf("HO SCRITTO:%d\n",ret);
+			printf(RESET);
 			sleep(10);
 		}
 	}
+	//gli altri processi scrivono e poi leggono
 	else{
 		while(!ret){
 			ret=scrivi_coda_syscall(coda1,"BBBBB",5);
+			printf(RED);
 			printf("HO SCRITTO:%d\n",ret);
+			printf(RESET);
 			sleep(10);
 		}
 		ret=0;
 		while(!ret){
-		ret=leggi_coda_syscall(coda1,s,5);
-		printf("HO LETTO:%d\n",ret);
-		sleep(10);
+			ret=leggi_coda_syscall(coda1,s,5);
+			printf(RED);
+			printf("HO LETTO:%d\n",ret);
+			printf(RESET);
+			sleep(10);
 		}
 	}
 	
-	print_coda(coda1);
+	chiudi_coda("coda1");
 
-  
+	//<------aggiunto da me
+
+
   int type=0;
   int mode=0;
   int fd=disastrOS_openResource(disastrOS_getpid(),type,mode);
   printf("fd=%d\n", fd);
   printf("PID: %d, terminating\n", disastrOS_getpid());
 
+/*
   for (int i=0; i<(disastrOS_getpid()+1); ++i){
     printf("PID: %d, iterate %d\n", disastrOS_getpid(), i);
     disastrOS_sleep((20-disastrOS_getpid())*5);
   }
+*/
   disastrOS_exit(disastrOS_getpid()+1);
+
+
 }
 
 
@@ -74,17 +97,6 @@ void initFunction(void* args) {
   disastrOS_printStatus();
   printf("hello, I am init and I just started\n");
   disastrOS_spawn(sleeperFunction, 0);
-  
-  coda* codaf=apri_coda("coda1");
-  char b[100];
-  for(int i=0; i<100; i++){
-	  b[i]='A';
-  }
-  int ret=scrivi_coda_syscall(codaf,b,100);
-  printf(MAGENTA);
-  printf("HO SCRITTO: %d\n",ret);
-  printf(RESET);
-  print_coda(codaf);
   
   printf("I feel like to spawn 10 nice threads\n");
   int alive_children=0;
@@ -108,15 +120,20 @@ void initFunction(void* args) {
 	   pid, retval, alive_children);
     --alive_children;
   }
+  print_lista_code();
   printf("shutdown!");
   disastrOS_shutdown();
 }
 
 int main(int argc, char** argv){
-  lista=init_lista_code();
-  printf(RED);
-  print_lista_code();
-  printf(RESET);
+	
+	//inizializzo la struttura che conterrà le code
+	lista=init_lista_code();										//<---aggiunto da me
+	printf(RED);													//<---aggiunto da me
+	print_lista_code();												//<---aggiunto da me
+	printf(RESET);													//<---aggiunto da me
+	
+	
   char* logfilename=0;
   if (argc>1) {
     logfilename=argv[1];
