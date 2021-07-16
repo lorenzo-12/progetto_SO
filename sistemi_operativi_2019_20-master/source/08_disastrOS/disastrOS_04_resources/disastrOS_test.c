@@ -6,7 +6,6 @@
 #define RED     "\x1b[31m"
 #define RESET   "\x1b[0m"
 #include "disastrOS.h"
-
 lista_code lista;
 
 // we need this to handle the sleep state
@@ -22,14 +21,39 @@ void childFunction(void* args){
   printf("Hello, I am the child function %d\n",disastrOS_getpid());
   printf("I will iterate a bit, before terminating\n");
   
-  int ret;
-  coda* coda1=apri_coda("coda1");
-  print_lista_code();
-  ret=scrivi_coda_syscall(coda1,"ciao",4);
-  print_coda(coda1);
-  char s[64];
-  ret=leggi_coda_syscall(coda1,s,4);
-  print_coda(coda1);
+	coda* coda1=apri_coda("coda1");
+	char s[64];
+	int ret=0;
+	int a=disastrOS_getpid();
+	
+	if(a%2==0){
+		while(!ret){
+			ret=leggi_coda_syscall(coda1,s,5);
+			printf("HO LETTO:%d\n",ret);
+			sleep(10);
+		}
+		ret=0;
+		while(!ret){
+			ret=scrivi_coda_syscall(coda1,"BBBBB",5);
+			printf("HO SCRITTO:%d\n",ret);
+			sleep(10);
+		}
+	}
+	else{
+		while(!ret){
+			ret=scrivi_coda_syscall(coda1,"BBBBB",5);
+			printf("HO SCRITTO:%d\n",ret);
+			sleep(10);
+		}
+		ret=0;
+		while(!ret){
+		ret=leggi_coda_syscall(coda1,s,5);
+		printf("HO LETTO:%d\n",ret);
+		sleep(10);
+		}
+	}
+	
+	print_coda(coda1);
 
   
   int type=0;
@@ -50,6 +74,17 @@ void initFunction(void* args) {
   disastrOS_printStatus();
   printf("hello, I am init and I just started\n");
   disastrOS_spawn(sleeperFunction, 0);
+  
+  coda* codaf=apri_coda("coda1");
+  char b[100];
+  for(int i=0; i<100; i++){
+	  b[i]='A';
+  }
+  int ret=scrivi_coda_syscall(codaf,b,100);
+  printf(MAGENTA);
+  printf("HO SCRITTO: %d\n",ret);
+  printf(RESET);
+  print_coda(codaf);
   
   printf("I feel like to spawn 10 nice threads\n");
   int alive_children=0;

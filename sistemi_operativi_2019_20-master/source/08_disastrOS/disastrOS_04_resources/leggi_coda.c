@@ -19,6 +19,7 @@ void leggi(){
     //se lo spazio disponibile per leggere è 0 allora restituisco 0 avvisando che ho letto 0 caratteri
     if(coda->reading_space==0){
         running->syscall_retvalue=0;
+        print_coda(coda);
         return;
     }
     //finchè c'è spazio per la lettura e finchè non ho raggiunto il massimo numero di caratteri che devo leggere
@@ -34,6 +35,7 @@ void leggi(){
         coda->writing_space++;
         i++;
     }
+    print_coda(coda);
     running->syscall_retvalue=i;
     
 }

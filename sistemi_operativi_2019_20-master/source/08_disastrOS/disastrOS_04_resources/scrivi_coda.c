@@ -18,6 +18,7 @@ void scrivi(){
     //se lo spazio disponibile è 0 allora ritorno subito "0" in modo da avvisare che ho scritto "o" caratteri
     if(coda->writing_space==0) {
         running->syscall_retvalue=0;
+        print_coda(coda);
         return;
     }
     //finchè c'è spazio per la scrittura e finchè non ho raggiunto il numero di caratteri massimo che devo scrivere
@@ -30,6 +31,7 @@ void scrivi(){
         coda->writing_space--;
         coda->reading_space++;
     }
+    print_coda(coda);
     running->syscall_retvalue=i;
     
 }
