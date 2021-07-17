@@ -102,7 +102,7 @@ void print_lista_code(){
 //serve per printare a schermo la struttura di una coda
 void print_coda(coda* aux){
     printf(BLUE);
-    printf("name: %s\nnum_ref:%d\nwriting_space:%d\nwriting_index:%d\nreading_space:%d\nreading_index:%d\n",
+    printf("name: %s   num_ref:%d   writing_space:%d   writing_index:%d   reading_space:%d   reading_index:%d\n",
                                     aux->name,aux->num_ref,aux->writing_space,aux->writing_index,aux->reading_space,aux->reading_index);
     printf("%s\n",aux->buffer);
     printf(RESET);

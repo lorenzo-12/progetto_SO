@@ -37,7 +37,7 @@ OBJS=pool_allocator.o\
 
 LIBS=libdisastrOS.a
 
-BINS=disastrOS_test
+BINS=test3
 
 #disastros_test
 
@@ -53,7 +53,7 @@ libdisastrOS.a: $(OBJS) $(HEADERS)
 	$(AR) -rcs $@ $^
 	$(RM) $(OBJS)
 
-disastrOS_test:		disastrOS_test.c $(LIBS)
+test3:		test3.c $(LIBS)
 	$(CC) $(CCOPTS) -o $@ $^
 
 clean:
